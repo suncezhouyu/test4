@@ -6,21 +6,21 @@ describe PagesController do
   describe "GET 'home'" do
     it "should be successful" do
       get 'home'
-      response.should have_selector("title", :content => "RoR Sample| Home")
+      response.should have_selector("title", :content => "RoR sample| Home")
     end
   end
 
   describe "GET 'contact'" do
     it "should be successful" do
       get 'contact'
-      response.should have_selector("title", :content => "RoR Sample| Contact")
+      response.should have_selector("title", :content => "RoR sample| Contact")
     end
   end
 
   describe "GET 'about'" do
     it "should be successful" do
       get 'about'
-      response.should have_selector("title", :content => "RoR Sample| About")
+      response.should have_selector("title", :content => "RoR sample| About")
     end
   end
 end
